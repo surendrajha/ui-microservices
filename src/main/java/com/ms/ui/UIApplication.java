@@ -1,4 +1,4 @@
-package com.mm;
+package com.ms.ui;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
