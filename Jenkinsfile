@@ -1,4 +1,4 @@
-# Jenkinsfile (Scripted  Pipeline)
+// Jenkinsfile (Scripted  Pipeline)
 node {
     def app
 
