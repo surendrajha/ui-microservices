@@ -6,8 +6,8 @@ node {
         checkout scm
     }
 
-	stage('Build') {
-        sh "mvn clean install -Dmaven.test.skip=true"
+    stage('Build') {
+        sh 'mvn install'
     }
     
     stage('Build image') {
