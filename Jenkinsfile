@@ -7,7 +7,7 @@ node {
     }
 
     stage('Build') {
-        sh 'mvn install'
+        bat "mvn clean install -DskipTests"
     }
     
     stage('Build image') {
