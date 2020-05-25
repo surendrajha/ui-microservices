@@ -14,11 +14,11 @@ node {
         app = docker.build("surendrajha/ui-ms")
     }
 
-    stage('Test image') {
+    /*stage('Test image') {
         app.inside {
             echo "Tests passed"
         }
-    }
+    }*/
 
     stage('Push image') {
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-creds-id') {
