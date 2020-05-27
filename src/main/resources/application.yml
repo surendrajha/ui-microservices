@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active:
+    - ${ENV:dev}
+
+server:
+  port: 9091
+  servlet:
+    context-path: /ui-service
+
+---
+spring:
+  profiles:
+  - dev
+
+data:
+  from:
+    file: classpath:static/company.xml
+    config_map: Config Map Value
+
+
+---
+spring:
+  profiles:
+  - prod
+
+data:
+  from:
+    file: file:${file_path}
+    config_map: ${config_map_value}
