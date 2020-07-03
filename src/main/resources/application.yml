@@ -28,3 +28,6 @@ data:
   from:
     file: file:${file_path}
     config_map: ${config_map_value}
+
+key1: ${key1}
+key2: ${key2}

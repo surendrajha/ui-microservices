@@ -28,6 +28,12 @@ public class UiConfig {
 	@Value("${data.from.config_map}")
 	private String configValue;
 
+	@Value("${key1}")
+	private String key1;
+
+	@Value("${key2}")
+	private String key2;
+
 	@Autowired
 	private ResourceLoader resourceLoader;
 
@@ -38,7 +44,8 @@ public class UiConfig {
 	}
 
 	private void readFile() {
-		log.info("reading file...");
+		log.info("reading file...key1:{}, key2:{}", key1, key2);
+
 		SAXBuilder builder = new SAXBuilder();
 		try {
 			// File xmlFile = ResourceUtils.getFile(filePath);
